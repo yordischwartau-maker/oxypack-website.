@@ -4,146 +4,321 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Oxypack Bouw — Van fundering tot sleutel</title>
-<meta name="description" content="Oxypack Bouw bouwt villa's en woningen razendsnel en strak afgewerkt. Van fundering tot sleutel.">
+<meta name="description" content="Oxypack Bouw bouwt villa's en woningen razendsnel en strak afgewerkt. Eén team, vaste prijs en vaste opleverdatum. Van fundering tot sleutel.">
 <meta name="theme-color" content="#0b0b0c">
+<meta property="og:title" content="Oxypack Bouw — Probably the fastest builders on the planet">
+<meta property="og:description" content="Villa's en woningen op maat. Eén team, één vaste prijs en één vaste opleverdatum.">
+<meta property="og:image" content="img/villa-breed.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<a class="skip" href="#main">Naar de inhoud</a>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span>NIEUWBOUW · VERBOUW · RENOVATIE · TUIN</span>
+    <span class="topbar-r"><a href="tel:+31201234567">+31 20 123 45 67</a><span>Reactie binnen 1 werkdag</span></span>
+  </div>
+</div>
+
 <header class="nav" id="nav">
-  <a class="logo" href="#top" aria-label="Oxypack Bouw">OXYPACK<span>.</span></a>
-  <nav>
-    <a href="#diensten">Diensten</a>
-    <a href="#projecten">Projecten</a>
-    <a href="#contact" class="nav-cta">Contact</a>
-  </nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Oxypack Bouw, naar boven">OXYPACK<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="menu">
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav id="menu" aria-label="Hoofdmenu">
+      <a href="#werkwijze">Werkwijze</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#projecten">Projecten</a>
+      <a href="#faq">Veelgestelde vragen</a>
+      <a href="#contact" class="btn btn-sm">Offerte aanvragen</a>
+    </nav>
+  </div>
 </header>
 
-<main id="top">
-  <!-- Scroll-gestuurde video -->
-  <section class="hero" id="hero">
-    <div class="stage">
-      <canvas id="canvas" aria-hidden="true"></canvas>
-      <div class="shade"></div>
+<main id="main">
+  <span id="top"></span>
 
-      <div class="beat" data-in="0" data-out="0.2">
-        <p class="eyebrow">Oxypack Bouw</p>
-        <h1>Probably the fastest builders <em>on the planet</em></h1>
-        <p class="sub">Scroll en zie hoe een huis uit de grond komt.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero-img" src="img/villa-breed.jpg" alt="Opgeleverde moderne villa met zwembad" fetchpriority="high">
+    <div class="hero-shade"></div>
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <p class="eyebrow">Oxypack Bouw — van fundering tot sleutel</p>
+        <h1>Probably the fastest builders on the planet.</h1>
+        <p class="hero-sub">Villa's en woningen op maat. Eén team, één vaste prijs en één vaste opleverdatum — zwart op wit vastgelegd.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Start je project
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#projecten">Bekijk projecten</a>
+        </div>
       </div>
-
-      <div class="beat" data-in="0.28" data-out="0.5">
-        <p class="eyebrow">01 — Fundament</p>
-        <h2>Een stevige start, in weken&nbsp;— niet maanden</h2>
-      </div>
-
-      <div class="beat" data-in="0.55" data-out="0.76">
-        <p class="eyebrow">02 — Constructie</p>
-        <h2>Van fundering <em>tot sleutel</em></h2>
-        <p class="sub">Eén team, één planning, nul gedoe.</p>
-      </div>
-
-      <div class="beat" data-in="0.84" data-out="1.01">
-        <p class="eyebrow">03 — Oplevering</p>
-        <h2>Klaar om in te wonen</h2>
-        <a class="btn" href="#contact">Start je project <span aria-hidden="true">→</span></a>
-      </div>
-
-      <div class="progress" aria-hidden="true"><i id="bar"></i></div>
-      <div class="scrollhint" id="hint" aria-hidden="true"><span></span></div>
+      <aside class="slot">
+        <p class="mono">Eerstvolgende startdatum</p>
+        <p class="slot-date">[MAAND 2027]</p>
+        <p>Nog [X] bouwslots vrij dit kwartaal. Reserveer met een vrijblijvend kennismakingsgesprek.</p>
+      </aside>
     </div>
   </section>
 
-  <section class="strip">
-    <div><b>4–6</b><span>weken ruwbouw</span></div>
-    <div><b>120+</b><span>opgeleverde woningen</span></div>
-    <div><b>100%</b><span>vaste prijs, vaste datum</span></div>
-    <div><b>10 jr</b><span>garantie op constructie</span></div>
+  <!-- Kerncijfers -->
+  <section class="stats" aria-label="Kerncijfers">
+    <div class="wrap stats-in">
+      <div><b>4–6</b><span>weken ruwbouw</span></div>
+      <div><b>120+</b><span>opgeleverde woningen</span></div>
+      <div><b>100%</b><span>vaste prijs, vaste datum</span></div>
+      <div><b>10 jr</b><span>garantie op constructie</span></div>
+    </div>
   </section>
 
-  <section class="section" id="diensten">
+  <!-- Werkwijze -->
+  <section class="section" id="werkwijze">
+    <div class="wrap">
+      <div class="head-row">
+        <div>
+          <p class="eyebrow">Werkwijze</p>
+          <h2 class="title">Zo snel gaat het. In vier heldere stappen.</h2>
+        </div>
+        <p class="muted head-aside">Geen losse aannemers die op elkaar wachten. Eén planning, dagelijks bijgewerkt en altijd inzichtelijk.</p>
+      </div>
+      <ol class="steps">
+        <li class="active">
+          <p class="mono">01 · Week [X]</p>
+          <h3>Kennismaking &amp; ontwerp</h3>
+          <p>We bespreken je wensen, budget en kavel. Je krijgt een eerste planning binnen één werkdag.</p>
+        </li>
+        <li>
+          <p class="mono">02 · Week [X]</p>
+          <h3>Vergunning &amp; vaste prijs</h3>
+          <p>Wij regelen de vergunning. Prijs en opleverdatum leggen we vast in één contract.</p>
+        </li>
+        <li>
+          <p class="mono">03 · 4–6 weken</p>
+          <h3>Fundering &amp; ruwbouw</h3>
+          <p>Een stevige start, in weken — niet maanden. Je volgt de voortgang met wekelijkse foto-updates.</p>
+        </li>
+        <li>
+          <p class="mono">04 · Oplevering</p>
+          <h3>Afbouw &amp; sleutel</h3>
+          <p>Strakke afwerking, gezamenlijke eindschouw en de sleutel. Klaar om in te wonen.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section class="section alt" id="diensten">
     <div class="wrap">
       <p class="eyebrow">Diensten</p>
-      <h2 class="title">Alles onder één dak, <em>letterlijk</em></h2>
-      <div class="grid cards">
-        <article class="card">
-          <span class="num">01</span>
+      <h2 class="title">Alles onder één dak. Letterlijk.</h2>
+      <div class="cards">
+        <a class="card" href="#contact" data-type="Nieuwbouw">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
           <h3>Nieuwbouw</h3>
           <p>Villa's en woningen op maat, volledig ontzorgd van vergunning tot oplevering.</p>
-        </article>
-        <article class="card">
-          <span class="num">02</span>
+          <span class="more">Offerte voor nieuwbouw →</span>
+        </a>
+        <a class="card" href="#contact" data-type="Verbouw / uitbouw">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M5 20V9l6-4v15"/><path d="M11 12h8v8"/></svg>
           <h3>Verbouw &amp; uitbouw</h3>
           <p>Meer ruimte, meer licht. Aanbouwen, opbouwen en doorbreken met strakke afwerking.</p>
-        </article>
-        <article class="card">
-          <span class="num">03</span>
+          <span class="more">Offerte voor verbouw →</span>
+        </a>
+        <a class="card" href="#contact" data-type="Renovatie">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
           <h3>Renovatie</h3>
           <p>Complete woningrenovatie, verduurzaming en herindeling in één doorlopend traject.</p>
-        </article>
-        <article class="card">
-          <span class="num">04</span>
+          <span class="more">Offerte voor renovatie →</span>
+        </a>
+        <a class="card" href="#contact" data-type="Tuin &amp; landschap">
+          <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 15c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/><path d="M4 22h16"/></svg>
           <h3>Tuin &amp; landschap</h3>
           <p>Terrassen, zwembaden en vuurplaatsen: de buitenruimte even strak als het huis.</p>
-        </article>
+          <span class="more">Offerte voor tuin →</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section alt" id="projecten">
+  <!-- Projecten -->
+  <section class="section" id="projecten">
     <div class="wrap">
       <p class="eyebrow">Projecten</p>
       <h2 class="title">Recent opgeleverd</h2>
-      <div class="grid projects">
-        <a class="project big" href="#contact">
-          <img src="frames/f_120.jpg" alt="Moderne villa met zwembad en tuin" loading="lazy">
-          <div><h3>Villa Heuvelrug</h3><span>Nieuwbouw · 6 maanden</span></div>
+      <div class="projects">
+        <a class="project feature" href="#contact">
+          <img src="img/villa-breed.jpg" alt="Villa Heuvelrug, moderne villa met zwembad en tuin" loading="lazy">
+          <div class="feature-bar">
+            <div>
+              <p class="mono accent">Uitgelicht · Nieuwbouw</p>
+              <h3>Villa Heuvelrug</h3>
+            </div>
+            <dl>
+              <div><dt>Bouwtijd</dt><dd>6 maanden</dd></div>
+              <div><dt>Oppervlak</dt><dd>[X] m²</dd></div>
+              <div><dt>Locatie</dt><dd>[PLAATS]</dd></div>
+            </dl>
+          </div>
         </a>
         <a class="project" href="#contact">
-          <img src="frames/f_085.jpg" alt="Woning in aanbouw met houten skelet" loading="lazy">
-          <div><h3>Residentie Dal</h3><span>Nieuwbouw · 5 maanden</span></div>
+          <img src="img/aanbouw.jpg" alt="Residentie Dal, woning in aanbouw met houten skelet" loading="lazy">
+          <div class="project-meta"><h3>Residentie Dal</h3><span>Nieuwbouw · 5 maanden</span></div>
         </a>
         <a class="project" href="#contact">
-          <img src="frames/f_040.jpg" alt="Fundering en betonstort" loading="lazy">
-          <div><h3>Woning Berkenlaan</h3><span>Fundering &amp; ruwbouw</span></div>
+          <img src="img/fundering.jpg" alt="Woning Berkenlaan, fundering en betonstort" loading="lazy">
+          <div class="project-meta"><h3>Woning Berkenlaan</h3><span>Fundering &amp; ruwbouw</span></div>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="section" id="contact">
-    <div class="wrap contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2 class="title">Start je <em>project</em></h2>
-        <p class="lead">Vertel ons kort wat je wilt bouwen. Binnen één werkdag reageren we met een eerste planning.</p>
-        <ul class="info">
-          <li><span>Telefoon</span><a href="tel:+31201234567">+31 20 123 45 67</a></li>
-          <li><span>E-mail</span><a href="mailto:info@oxypack.nl">info@oxypack.nl</a></li>
-          <li><span>Adres</span>Bouwweg 1, 1000 AA Amsterdam</li>
-        </ul>
+  <!-- Waarom Oxypack -->
+  <section class="section light">
+    <div class="wrap why">
+      <div class="why-text">
+        <p class="eyebrow">Waarom Oxypack</p>
+        <h2 class="title">Bouwen zonder gedoe.</h2>
+        <p>Snel bouwen betekent niet slordig bouwen. Het betekent: alles vooraf geregeld, één team op de bouwplaats en afspraken die we nakomen.</p>
+        <img src="img/afbouw.jpg" alt="Strak afgewerkte gevel van een villa in afbouw" loading="lazy">
       </div>
-      <form id="form" novalidate>
-        <label>Naam<input name="naam" required autocomplete="name"></label>
-        <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
-        <label>Type project
-          <select name="type">
-            <option>Nieuwbouw</option><option>Verbouw / uitbouw</option>
-            <option>Renovatie</option><option>Anders</option>
-          </select>
-        </label>
-        <label>Bericht<textarea name="bericht" rows="4"></textarea></label>
-        <button class="btn" type="submit">Verstuur aanvraag <span aria-hidden="true">→</span></button>
-        <p class="note" id="note" role="status"></p>
-      </form>
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr><th scope="col"><span class="sr">Onderdeel</span></th><th scope="col">Gemiddelde aannemer</th><th scope="col" class="us">Oxypack</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Ruwbouw</th><td>Maanden, vaak uitloop</td><td class="us">4–6 weken</td></tr>
+            <tr><th scope="row">Prijs</th><td>Richtprijs + meerwerk</td><td class="us">Vaste prijs in contract</td></tr>
+            <tr><th scope="row">Opleverdatum</th><td>Indicatief</td><td class="us">Vaste datum</td></tr>
+            <tr><th scope="row">Aanspreekpunt</th><td>Per vakdiscipline</td><td class="us">Eén projectleider</td></tr>
+            <tr><th scope="row">Garantie constructie</th><td>Wettelijk minimum</td><td class="us">10 jaar</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review -->
+  <section class="section quote" aria-label="Klantervaring">
+    <div class="wrap narrow">
+      <svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="currentColor"><path d="M4 18h6v-6H6.5c0-2.5 1.5-4 3.5-4.5V5C6.5 5.5 4 8.5 4 12.5V18zm10 0h6v-6h-3.5c0-2.5 1.5-4 3.5-4.5V5c-3.5.5-6 3.5-6 7.5V18z"/></svg>
+      <blockquote>[KLANTCITAAT — bijvoorbeeld over de snelheid, de vaste prijs of de communicatie tijdens de bouw.]</blockquote>
+      <p class="muted">[NAAM KLANT] · [PROJECT, PLAATS]</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap split">
+      <div class="split-side">
+        <p class="eyebrow">Veelgestelde vragen</p>
+        <h2 class="title">Goed om te weten</h2>
+        <p class="muted">Staat je vraag er niet tussen? Bel ons op <a class="link" href="tel:+31201234567">+31 20 123 45 67</a>.</p>
+      </div>
+      <div class="faq split-main">
+        <details open>
+          <summary>Hoe kunnen jullie zo snel bouwen?</summary>
+          <p>Alles wordt vooraf uitgewerkt: ontwerp, materialen en planning liggen vast voordat we starten. Eén eigen team werkt doorlopend op de bouwplaats, zodat er geen wachttijd tussen vakdisciplines ontstaat.</p>
+        </details>
+        <details>
+          <summary>Is de prijs echt vast?</summary>
+          <p>Ja. De prijs en opleverdatum leggen we vast in het contract. Alleen wijzigingen die jij zelf aanvraagt tijdens de bouw kunnen de prijs veranderen, en die spreken we altijd vooraf met je af.</p>
+        </details>
+        <details>
+          <summary>Regelen jullie ook de vergunning?</summary>
+          <p>Ja, we verzorgen de vergunningsaanvraag en de contacten met de gemeente als onderdeel van het traject.</p>
+        </details>
+        <details>
+          <summary>In welke regio werken jullie?</summary>
+          <p>[WERKGEBIED — bijvoorbeeld provincies of straal rond Amsterdam].</p>
+        </details>
+        <details>
+          <summary>Wat valt onder de garantie?</summary>
+          <p>Op de constructie geven we 10 jaar garantie. [DETAILS GARANTIE AFWERKING EN INSTALLATIES].</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-sec" id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div class="contact-side">
+          <p class="eyebrow">Contact</p>
+          <h2 class="title">Start je project.</h2>
+          <p class="soft">Vertel ons kort wat je wilt bouwen. Binnen één werkdag reageren we met een eerste planning.</p>
+          <ul class="info">
+            <li><span>Telefoon</span><a href="tel:+31201234567">+31 20 123 45 67</a></li>
+            <li><span>E-mail</span><a href="mailto:info@oxypack.eu">info@oxypack.eu</a></li>
+            <li><span>Adres</span><b>Bouwweg 1, 1000 AA Amsterdam</b></li>
+          </ul>
+        </div>
+        <div class="contact-main">
+          <form id="form" novalidate>
+            <label>Naam<input name="naam" required autocomplete="name"></label>
+            <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
+            <label>Telefoon<input name="telefoon" type="tel" autocomplete="tel"></label>
+            <label>Type project
+              <select name="type" id="type">
+                <option>Nieuwbouw</option><option>Verbouw / uitbouw</option><option>Renovatie</option><option>Tuin &amp; landschap</option><option>Anders</option>
+              </select>
+            </label>
+            <label class="full">Gewenste start
+              <select name="start">
+                <option>Zo snel mogelijk</option><option>Binnen 3 maanden</option><option>Binnen 6 maanden</option><option>Nog niet bekend</option>
+              </select>
+            </label>
+            <label class="full">Bericht<textarea name="bericht" rows="4"></textarea></label>
+            <div class="full form-foot">
+              <p class="small muted">Vrijblijvend. We delen je gegevens met niemand.</p>
+              <button class="btn" type="submit">Verstuur aanvraag →</button>
+            </div>
+            <p class="full note" id="note" role="status"></p>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <span>© <span id="yr"></span> Oxypack Bouw</span>
-  <a href="#top">Naar boven ↑</a>
+  <div class="wrap foot">
+    <div>
+      <p class="logo">OXYPACK<span>.</span></p>
+      <p class="muted small">Van fundering tot sleutel. Probably the fastest builders on the planet.</p>
+    </div>
+    <nav aria-label="Diensten">
+      <p class="mono">Diensten</p>
+      <a href="#diensten">Nieuwbouw</a><a href="#diensten">Verbouw &amp; uitbouw</a><a href="#diensten">Renovatie</a><a href="#diensten">Tuin &amp; landschap</a>
+    </nav>
+    <nav aria-label="Bedrijf">
+      <p class="mono">Oxypack</p>
+      <a href="#werkwijze">Werkwijze</a><a href="#projecten">Projecten</a><a href="#faq">Veelgestelde vragen</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="muted">
+      <p class="mono">Gegevens</p>
+      <span>Bouwweg 1, 1000 AA Amsterdam</span><span>KvK [NUMMER]</span><span>BTW [NUMMER]</span>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="yr">2026</span> Oxypack Bouw · oxypack.eu</span>
+    <span class="foot-links"><a href="#top">Privacy</a><a href="#top">Voorwaarden</a><a href="#top">Naar boven ↑</a></span>
+  </div>
 </footer>
+
+<div class="mobile-bar" id="mobileBar">
+  <a class="btn btn-ghost" href="tel:+31201234567">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Bellen</a>
+  <a class="btn" href="#contact">Offerte aanvragen</a>
+</div>
 
 <script src="main.js"></script>
 </body>
